@@ -1,0 +1,49 @@
+<!-- <p>gallary works!</p> -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title" data-aos="flip-left">
+      <h3>Gallary</h3>
+    </div>
+
+    <div
+      class="row portfolio-container"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div
+        *ngFor="let item of gallery"
+        class="col-lg-3 col-md-6 portfolio-item"
+      >
+        <div class="portfolio-wrap">
+          <img [src]="item.imageUrl" class="img-fluid" alt="image" />
+          <div class="portfolio-info">
+            <div class="portfolio-links">
+              <a
+                href=""
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container" data-aos="fade-up">
+<div class="section-title" data-aos="flip-left">
+  <h3>Videos</h3>
+</div>
+
+<div class="video-row">
+  <youtube-player [videoId]="videoId" [height]="220" [width]="400" suggestedQuality="hd720"></youtube-player>
+  <youtube-player [videoId]="videoId1" [height]="220" [width]="400" suggestedQuality="hd720"></youtube-player>
+  <youtube-player [videoId]="videoId2" [height]="220" [width]="400" suggestedQuality="hd720"></youtube-player>
+</div>
+
+<div class="video-row">
+  <youtube-player [videoId]="videoId3" [height]="220" [width]="400" suggestedQuality="hd720"></youtube-player>
+  <youtube-player [videoId]="videoId4" [height]="220" [width]="400" suggestedQuality="hd720"></youtube-player>
+</div>
+</div>

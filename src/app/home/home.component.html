@@ -1,0 +1,450 @@
+<!-- Home Section -->
+<carousel>
+  <ng-container *ngFor="let slide of slides; let index = index">
+    <div data-aos="fade-left" [attr.data-aos-delay]="100 + index * 30">
+      <slide>
+        <div class="slide-wrapper">
+          <img [src]="slide.image" alt="Slide {{ index + 1 }}" />
+          <div class="carousel-caption">
+            <div data-aos="fade-left" data-aos-delay="100">
+              <h1><span style="color: orange"></span></h1>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="100"></div>
+            <div>
+              <p style="color: black"><br /></p>
+            </div>
+          </div>
+        </div>
+      </slide>
+    </div>
+  </ng-container>
+</carousel>
+<!-- End Home Section  -->
+<!-- about section -->
+<section id="about" class="about" style="padding: 35px;">
+  <div class="container" data-aos="fade-up" data-aos-delay="200">
+    <div class="row">
+      <div
+        class="col-lg-6 order-1 order-lg-2"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
+        <img
+          src="../../assets/Home/processing line 2.png"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div
+        class="para col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
+        <div data-aos="flip-left"><h3>About Us</h3></div>
+        <div data-aos="fade-right" data-aos-delay="120">
+          <ul>
+              Pioneering an integrated strategy within
+              the realm of food and agriculture, we stand as a premier online
+              platform in India, specializing in business services for the food,
+              agri, and allied sectors. Committed to facilitating the swift and
+              cost-effective establishment and growth of enterprises, our
+              mission revolves around aiding individuals in transforming their
+              ideas into viable start-ups. Our goal is to streamline the
+              process, making it more accessible for entrepreneurs to initiate
+              and expand their ventures seamlessly.
+            <br />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Section -->
+<!-- services -->
+<section id="services" class="service" >
+  <div class="container" data-aos="fade-right">
+    <h3>Services</h3>
+    <div *ngFor="let service of services; let i = index" class="row">
+      <div class="col" [ngClass]="{'order-md-2': i % 2 !== 0}">
+        <img [src]="service.image" alt="Image">
+      </div>
+      <div class="col" [ngClass]="{'order-md-1': i % 2 !== 0}" data-aos="fade-left">
+        <h2>{{ service.caption }}</h2>
+        <p>{{ service.content }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end services -->
+<!-- client section -->
+<section id="clients" class="clients">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title"><h3>Clients</h3></div>
+    <carousel>
+        <!-- Slide 3 -->
+        <slide>
+          <div class="row">
+            <div
+              class="col-lg-2 col-md-4 col-6 portfolio-item"
+              *ngFor="let item of items1"
+            >
+              <div class="client-wrap">
+                <img
+                  [src]="item.imageUrl"
+                  class="img-fluid"
+                  alt="{{ item.title }}"
+                />
+                <div class="client-info">
+                  <div class="client-links">
+                    <a
+                      href=""
+                      data-gallery="client"
+                      class="client-lightbox"
+                      [title]="item.title"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <!-- Row 2 -->
+            <div
+              class="col-lg-2 col-md-4 col-6 portfolio-item"
+              *ngFor="let item of items2"
+            >
+              <div class="client-wrap">
+                <img
+                  [src]="item.imageUrl"
+                  class="img-fluid"
+                  alt="{{ item.title }}"
+                />
+                <div class="client-info">
+                  <div class="client-links">
+                    <a
+                      href=""
+                      data-gallery="client"
+                      class="client-lightbox"
+                      [title]="item.title"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </slide>
+      <!-- Slide 1 -->
+      <slide>
+        <div class="row">
+          <!-- Row 1 -->
+          <div
+          class="col-lg-2 col-md-4 col-6 portfolio-item"
+            *ngFor="let item of items2"
+          >
+            <div class="client-wrap">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="client-info">
+                <div class="client-links">
+                  <a
+                    href=""
+                    data-gallery="client"
+                    class="client-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Row 2 -->
+          <div
+            class="col-lg-2 col-md-4 col-6 portfolio-item"
+            *ngFor="let item of items3"
+          >
+            <div class="client-wrap">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="client-info">
+                <div class="client-links">
+                  <a
+                    href=""
+                    data-gallery="client"
+                    class="client-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </slide>
+      <!-- Slide 2 -->
+      <slide>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-4 col-6 portfolio-item"
+            *ngFor="let item of items4"
+          >
+            <div class="client-wrap">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="client-info">
+                <div class="client-links">
+                  <a
+                    href=""
+                    data-gallery="client"
+                    class="client-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Row 2 -->
+          <div
+            class="col-lg-2 col-md-4 col-6 portfolio-item"
+            *ngFor="let item of items5"
+          >
+            <div class="client-wrap">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="client-info">
+                <div class="client-links">
+                  <a
+                    href=""
+                    data-gallery="client"
+                    class="client-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</section>
+<!-- end client section -->
+<!--  -->
+<section id="whyus" class="whyus py-5">
+  <div class="container"data-aos="fade-up">
+    <div class="row" data-aos="zoom-in-up" data-aos-delay="100">
+      
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="video-row">
+          <youtube-player [videoId]="videoId1" [height]="320" [width]="500" suggestedQuality="hd720"></youtube-player>
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div>
+          <section class="card-body" data-aos="fade-right" data-aos-delay="200">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="item1">
+                <div
+                  class="accordion-header"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-offset="20"
+                >
+                  <button (click)="toggleAccordion(i)">
+                    {{ faq.question }}
+                    <span [ngClass]="{ open: i === activeIndex }">&#x2b;</span>
+                  </button>
+                </div>
+                <div
+                  [ngClass]="{ open: i === activeIndex }"
+                  class="accordion-body"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                  data-aos-offset="30"
+                >
+                  <ul>
+                    <li *ngFor="let item of faq.answers">{{ item }} <a href="tel:+91 7218024999">Click Here</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </ng-container>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  -->
+<!-- why we -->
+<div class="container" id="program">
+  <div class="inner-container">
+    <div class="TS-title" data-aos="flip-left" class="aos-init aos-animate">
+      <h3 style="font-size: 22px;">Why Us</h3>
+    </div>
+    <div class="row tool_box" data-aos="fade-right">
+      <div class="col-auto">
+        <div class="tool-name">Core Capabilities</div>
+      </div>
+      <div class="col-auto">
+        <div class="tool-name">Client Confidentiality</div>
+      </div>
+      <div class="col-auto">
+        <div class="tool-name">Team Of Experts</div>
+      </div>
+      <div class="col-auto">
+        <div class="tool-name">
+          Focus On Client Success
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="tool-name">100% Transparency</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end why we -->
+<!-- sector section -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <h3>Food Category We Serve</h3>
+    <carousel>
+      <!-- Slide 1 -->
+      <slide>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 portfolio-item" *ngFor="let item of slides1">
+            <div class="portfolio-wrap" (click)="navigateToFoodCategory(item.title)">
+              <img [src]="item.imageUrl" class="img-fluid" alt="{{ item.title }}" />
+              <div class="portfolio-info">
+                <h4>{{ item.title }}</h4>
+                <div class="portfolio-links">
+                  <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" [title]="item.title"></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-text">
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
+      </slide>
+      <!-- Slide 2 -->
+      <slide>
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 portfolio-item"
+            *ngFor="let item of slides2"
+          >
+            <div class="portfolio-wrap" (click)="navigateToFoodCategory(item.title)">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="portfolio-info">
+                <h4>{{ item.title }}</h4>
+                <div class="portfolio-links">
+                  <a
+                    href=""
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-text">
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
+      </slide>
+
+      <!-- Slide 3 -->
+      <slide>
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 portfolio-item"
+            *ngFor="let item of slides3"
+          >
+            <div class="portfolio-wrap" (click)="navigateToFoodCategory(item.title)">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="portfolio-info">
+                <h4>{{ item.title }}</h4>
+                <div class="portfolio-links">
+                  <a
+                    href=""
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-text">
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
+      </slide>
+
+       <!-- Slide 4 -->
+       <slide>
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 portfolio-item"
+            *ngFor="let item of slides4"
+          >
+            <div class="portfolio-wrap" (click)="navigateToFoodCategory(item.title)">
+              <img
+                [src]="item.imageUrl"
+                class="img-fluid"
+                alt="{{ item.title }}"
+              />
+              <div class="portfolio-info">
+                <h4>{{ item.title }}</h4>
+                <div class="portfolio-links">
+                  <a
+                    href=""
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    [title]="item.title"
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-text">
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</section>
+
+<!-- testimonials -->
+<app-test-page></app-test-page>
+<!-- end testimonials -->
+

@@ -1,0 +1,50 @@
+<!-- <p>contact-us works!</p> -->
+<div class="contactus">
+  <h3>Contact Us</h3> <!-- Add this line for the heading -->
+
+  <section class="section section-contact section--hidden">
+    <div class="container">
+      <span>
+        <strong class="form_title">Book your appointment now
+        </strong>
+      </span>
+      <span
+        >Fill in your contact details, let us know how we can assist and one of
+        our team will be in touch as soon as possible.</span
+      >
+    </div>
+
+    <div class="section-contact-main container">
+      <form action="https://formspree.io/f/mwkdlywq" method="POST">
+        <div class="grid grid-two-col">
+          <label class="form_field" for="name">Name*</label>
+          <input type="text" name="username" id="name" required />
+          <label class="form_field" for="email">Email*</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="false"
+          />
+          <label class="form_field" for="mobile-no.">Mobile No.*</label>
+          <input
+            type="number"
+            name="mobile no."
+            id="mobile no."
+            required
+            autocomplete="false"
+          />
+        </div>
+        <div>
+          <label class="form_field" for="subject">Requirements*</label>
+          <input type="text" name="requirements" id="requirements" />
+        </div>
+        <div>
+          <button class="form_btn">Book</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+<!-- end contact us -->

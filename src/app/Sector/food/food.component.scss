@@ -1,0 +1,25 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 28px;
+    border:1px solid black;
+    background-color: beige;
+    border-radius: 43px;
+    margin-bottom: 9px;
+    margin-top: 122px;
+  }
+  @media (max-width: 767px) {
+  .container {
+    margin-top: 202px;
+  }
+}
+  h1 {
+    color: gray;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 15px;
+  }

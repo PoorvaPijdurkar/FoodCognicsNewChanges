@@ -1,0 +1,70 @@
+@import '/src/theme/themes.scss';
+
+.testimonial-card img {width: 94px;
+    height: 50px;
+    }
+    .testimonial-card{
+      display: flex;
+      margin-left: 12px;
+      margin-right: 12px;
+      flex-direction: column;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 70px 30px 35px;
+      margin-top: 50px;
+      background: $secondary-color;
+      color: $white-color;
+      border-radius: 20px;
+      width:31.333333%;
+      position: relative;
+      .person-text,.company-text{
+        color: $gray-color;
+        width: fit-content;
+        margin: auto;
+      }
+      .profile{
+        position: absolute;
+        top: -25%;
+        left:50%;
+        transform: translateX(-50%);
+        img{
+        width:120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid $secondary-white;
+        margin-top: 26px;
+        }
+      }
+      .rating-section{
+        text-align: center;
+        img{
+          width:20px;
+          height: 20px;
+          margin-right: 5px;
+          &:last-child{
+            margin-right: 0px;
+          }
+            }
+      }
+      .card-body{
+        p{
+          width: fit-content;
+          text-align: center;
+          margin: auto;
+          margin-top: $main-padding;
+        }
+        .person-text,.company-text{
+          color: $gray-color;
+          width: fit-content;
+          margin: auto;
+          margin-top: $main-padding;
+        }
+      }
+    }
+    h3::after {
+      content: "";
+      width: 120px;
+      height: 1px;
+      display: inline-block;
+      background: #ffde9e;
+      margin: 4px 10px;
+    }

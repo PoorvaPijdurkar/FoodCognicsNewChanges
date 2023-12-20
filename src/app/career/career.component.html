@@ -1,0 +1,38 @@
+<!-- services -->
+<section id="services" class="service">
+  <div class="container">
+    <h3 data-aos="fade-up">Industrial Training to Graduates</h3>
+    <div *ngFor="let service of services; let i = index" class="row" data-aos="fade-up">
+      <div class="col" [ngClass]="{ 'order-md-2': i % 2 !== 0 }" data-aos="fade-left">
+        <img [src]="service.image" alt="Image" />
+      </div>
+      <div class="col" [ngClass]="{ 'order-md-1': i % 2 !== 0 }" data-aos="fade-left">
+        <h2>{{ service.caption }}</h2>
+        <p>{{ service.content }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end services -->
+<!-- form -->
+<div class="container" id="forms">
+    <h3>Search Opportunity</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input type="text" id="name" placeholder="Your Name" formControlName="name" /><br/>
+  
+      <input type="email" id="email"  placeholder="Email Id" formControlName="email" /><br/>
+
+      <input type="text" id="mobile Number"  placeholder="Mobile Number" formControlName="mobile" /><br/>
+  
+
+      <input type="text" id="education" placeholder="Education" formControlName="education" /><br/>
+  
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" placeholder="resume" formControlName="resume" /><br/>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+<!--  -->

@@ -1,0 +1,234 @@
+.container {
+  max-width: 1071px;
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 43px;
+  margin-bottom: 9px;
+  margin-top: 123px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+.section p {
+  font-size: 15px;
+  margin-top: 18px;
+  text-align: justify;
+}
+.about {
+  font-size: 22px;
+  color: gray;
+  margin-left: 107px;
+}
+.row.tool_box {
+  display: flex;
+  justify-content: center;
+  margin-left: 122px;
+}
+@media (max-width: 767px) {
+  .container {
+    margin-top: 195px;
+  }
+  .row.tool_box {
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 100%;
+    padding: 3px;
+    margin-left: 2px;
+  }
+
+  .about {
+    margin-bottom: 21px;
+    margin-left: 23px;
+  }
+
+  .tool_box .col-auto {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+
+  .tool-name {
+    width: 100%;
+    margin-right: 0;
+    padding: 3px 0;
+  }
+
+  .tool-name img {
+    height: 41px;
+    width: 31px;
+  }
+}
+
+// teams css
+@import "/src/theme/themes.scss";
+
+.testimonial-card {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-direction: column;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 42px 50px 0px;
+  margin-top: 50px;
+  background: whitesmoke;
+  color: $white-color;
+  border-radius: 20px;
+  margin-bottom: 9px;
+  width: 50%;
+  position: relative;
+  .profile {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      margin-left: -203px;
+      padding: 45px 47px;
+      width: 23%;
+      border-radius: 53px;
+      background-color: aliceblue;
+      margin-top: 6px;
+    }
+  }
+}
+h2 {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+p {
+  color: black;
+  font-size: 12px;
+}
+.top_panel_title .page_caption {
+  margin-top: 0;
+  font-family: "Bellefair-Regular";
+  color: #ffa705;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 111px;
+}
+.teams {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .testimonial-card {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card .profile {
+    position: relative;
+    margin-left: -270px;
+    top: -65px;
+    left: auto;
+    transform: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .testimonial-card .profile img {
+    margin-left: 0;
+    width: 40%;
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  .top_panel_title {
+    margin-top: 199px;
+  }
+
+  .teams {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    .teams {
+      flex-wrap: wrap;
+    }
+    .testimonial-card {
+      width: 48%;
+      margin-right: 4%;
+    }
+  }
+}
+.team {
+  width: 23%;
+  margin-left: -52px;
+  margin-top: -81px;
+}
+@media (max-width: 767px) {
+  .team {
+    margin-left: -20px;
+    width: 20%;
+  }
+}
+.wpb_single_image img {
+  height: 196px;
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+  border: 1px solid white;
+  border-radius: 9px;
+}
+@media (max-width: 767px) {
+  .wpb_single_image img {
+    height: 211px;
+    width: 51%;
+  }
+}
+.video{
+  margin-left: 289px;
+  margin-top: 29px;
+}
+//
+	.video{
+    margin-left: 289px;
+    margin-top: 29px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 31px;
+    background-color: aliceblue;
+  }
+  .col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding: 0 15px;
+    margin-left: 34px;
+  }
+  .sc_align_center {
+    text-align: center;
+  }
+  .wpb_single_image {
+    margin-bottom: 15px;
+  }
+  .know-more {
+    cursor: pointer;
+    display: inline;
+    padding: 10px 18px 11px 19px;
+    color: #fff;
+    border-radius: 7px;
+    color: darkgray;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .know-more:hover {
+    background-color: black;
+  } 
+  .sc_promo_subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .our_wines_text {
+    margin-right: 130px;
+    text-align: justify;
+    font-size: 13px;
+    font-family: system-ui;
+    margin-left: 137px;
+  }

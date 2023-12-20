@@ -1,0 +1,51 @@
+.container {
+  max-width: 1000px;
+  margin: 7px auto 9px;
+  // background-color: ;
+  border-radius: 15px;
+  padding: 23px;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  margin-top: 112px;
+  // margin-top: 130px;
+}
+
+h1 {
+  color: #333; 
+  font-weight: 700;
+  font-size: 21px;
+}
+img{
+  width: 100%;
+}
+.section {
+  margin-bottom: 20px;
+}
+p{
+  margin-left: 19px;
+  margin-top: -25px;
+}
+.project-image {
+  width: 150px; 
+  margin-right: 20px;
+}
+
+.project-details {
+  margin-left: 40px;
+}
+@media (max-width: 767px) {
+  .container{
+margin-top: 194px;
+}
+.project-details {
+  margin-left: 0;
+}
+.container {
+  margin-top: 194px;
+  flex-direction: column; 
+}
+h1 {
+margin-top: 35px;
+}
+}

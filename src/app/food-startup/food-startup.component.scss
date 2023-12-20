@@ -1,0 +1,67 @@
+.row.tool_box {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+  }
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .tool-name {
+    padding: 15px 11px;
+    background: #fff;
+    border-radius: 18px;
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    background-color: beige;
+  }
+  .tool-name img {
+    height: 60px;
+    width: 60px;
+  }
+  @media (max-width: 767px) {
+    .tool_box .col-auto {
+      flex-basis: 50%;
+      box-sizing: border-box;
+      padding-right: 10px;
+    }
+  
+    .tool-name {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .tool-name img {
+      height: 41px;
+      width: 31px;
+    }
+    .row.tool_box {
+      margin-left: 0;
+    }
+  }
+  #program{
+    width: 100%; 
+    max-width: 1118px;
+    margin-top: 200px;
+  }
+  #program {
+    background-image: url('../../assets/sector/foodImg.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-top: 137px;
+    image-rendering: pixelated;
+  }
+  strong{
+    color: cornsilk;
+    font-weight: bolder;
+    font-size: 21px;
+  }
+  p{
+    font-weight: 600;
+    font-size: 16px;
+    color: cornsilk;
+}

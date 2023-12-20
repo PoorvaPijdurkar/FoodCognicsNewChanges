@@ -1,0 +1,132 @@
+@import '/src/theme/themes.scss';
+
+.testimonial-card{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 42px 50px 0px;
+    margin-top: 50px;
+    background: whitesmoke;
+    color: $white-color;
+    border-radius: 20px;
+    margin-bottom: 9px;
+    width:50%;
+    position: relative;
+    .profile{
+        position: absolute;
+        top: -25%;
+        left:50%;
+        transform: translateX(-50%);
+        img{
+            margin-left: -203px;
+            padding: 45px 47px;
+            width: 23%;
+            border-radius: 53px;
+            background-color: aliceblue;
+            margin-top: 6px;
+        
+        }
+      }
+}
+h2{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 12px;
+}
+.top_panel_title .page_caption {
+    margin-top: 0;
+    font-family: "Bellefair-Regular";
+    color: #ffa705;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 111px;
+  }
+  .name-title {
+    text-align: center;
+    margin-left: 403px;
+  }
+  .sc_promo_subtitle {
+    text-align: center;
+    margin-left: 392px;
+  }
+  .trx_addons_accent {
+    margin-left: 392px;
+  }
+  .teams{
+    display: flex;
+  }
+
+@media (max-width: 767px) {
+  .testimonial-card {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px; 
+  }
+
+  .testimonial-card .profile {
+    position: relative;
+    margin-left: -270px;
+    top: -65px;
+    left: auto;
+    transform: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .testimonial-card .profile img {
+    margin-left: 0;
+    width: 40%; 
+    max-width: 100px; 
+    border-radius: 50%;
+  }
+
+  .name-title,
+  .sc_promo_subtitle,
+  .trx_addons_accent {
+    text-align: center;
+    margin-left: 0;
+  }
+  .content{
+    margin-top: -3px;
+  }
+  .top_panel_title .page_caption {
+    margin-top: 20px; 
+  }
+
+  .top_panel_title {
+    margin-top: 199px;
+  }
+
+  .teams {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    .teams {
+      flex-wrap: wrap;
+    }
+    .testimonial-card {
+      width: 48%;
+      margin-right: 4%;
+    }
+  }
+}
+.team{
+  width: 23%;
+  margin-left: -52px;
+  margin-top: -81px;
+}
+@media (max-width: 767px) {
+.team{
+  margin-left: -20px;
+  width: 20%;
+}
+}

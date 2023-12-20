@@ -1,0 +1,85 @@
+.contactus {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 130px;
+  text-align: start;
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
+}
+h3::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+
+.form_title {
+  display: flex;
+  font-size: 21px;
+  font-family: "Roboto" sans-serif;
+}
+
+.section-contact-main {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.section-contact-main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contact-main input,
+textarea {
+  padding: 5px 10px;
+  border: 1px solid #c9c9c9;
+  width: 95%;
+  font-size: 16px;
+  font-family: "work sans";
+  background: #ededed;
+}
+
+.section-contact-main textarea {
+  height: 9rem;
+}
+
+.form_field {
+  font-size: 16px;
+  font-family: "Roboto" sans-serif;
+  font-weight: 600;
+}
+
+.section-contact-main input[type="submit"] {
+  max-width: 30%;
+  border: none;
+}
+
+.form_btn {
+  margin-bottom: 6px;
+  background-color: #17a8e3;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 11px 23px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 8px;
+}
+.section-contact{
+  margin-top: 50px;
+  margin-left: -60px;
+}
+@media (max-width: 767px) {
+.contactus{
+margin-top: 222px;
+}
+.section-contact{
+  text-align: start;
+  margin-left: -150px;
+}
+}
