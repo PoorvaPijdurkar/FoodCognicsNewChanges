@@ -49,7 +49,7 @@ export class HomeComponent {
 
   //home
   slides = [
-    { image: '../../assets/Home/homepage1.jpeg',  },
+    { image: '../../assets/Home/homepage1.jpeg', name:'Leading Food Consultant in India' },
     { image: '../../assets/Home/processing line.png', },
     { image: '../../assets/Home/homeimg2.jpg', },
     { image: '../../assets/sector/img3.avif', },

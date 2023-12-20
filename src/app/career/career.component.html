@@ -18,13 +18,12 @@
 <!-- form -->
 <div class="container" id="forms">
     <h3>Search Opportunity</h3>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" action="" method="post">
       <input type="text" id="name" placeholder="Your Name" formControlName="name" /><br/>
   
       <input type="email" id="email"  placeholder="Email Id" formControlName="email" /><br/>
 
       <input type="text" id="mobile Number"  placeholder="Mobile Number" formControlName="mobile" /><br/>
-  
 
       <input type="text" id="education" placeholder="Education" formControlName="education" /><br/>
   
@@ -34,5 +33,6 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+  <form >
   
 <!--  -->
